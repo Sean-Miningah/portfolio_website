@@ -8,7 +8,8 @@ type Props = {}
 
 function Skills({}: Props) {
   return (
-    <div
+    <section
+      id="skills"
       className="
         px-5
         my-5
@@ -73,7 +74,7 @@ function Skills({}: Props) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

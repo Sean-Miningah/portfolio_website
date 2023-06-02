@@ -45,22 +45,28 @@ export default function Drawer({
             "
           >
             <a
-              href="#home"
-              onClick={() => setIsOpen(false)}
-            >
-              <p className="text-l font-poppins text-2xl">Home</p>
-            </a>
-            <a
               href="#about"
               onClick={() => setIsOpen(false)}
             >
               <p className="text-l font-poppins text-2xl">About</p>
             </a>
             <a
-              href="#Projects"
+              href="#skills"
+              onClick={() => setIsOpen(false)}
+            >
+              <p className="text-l font-poppins text-2xl">Skills</p>
+            </a>
+            <a
+              href="#projects"
               onClick={() => setIsOpen(false)}
             >
               <p className="text-l font-poppins text-2xl">Projects</p>
+            </a>
+            <a
+              href="#contacts"
+              onClick={() => setIsOpen(false)}
+            >
+              <p className="text-l font-poppins text-2xl">Contacts</p>
             </a>
           </div>
         </article>

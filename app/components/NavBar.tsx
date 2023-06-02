@@ -80,7 +80,7 @@ const NavBar = ({ setIsOpen }: Props) => {
             ease-out
           "
           >
-          <a href="#contact">
+          <a href="#contacts">
             Contact
           </a>
         </div>
