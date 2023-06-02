@@ -18,6 +18,7 @@ export default function Home() {
         h-screen
         bg-orange-100
         overflow-x-hidden
+        scroll-smooth
       "
     >
       <Drawer 

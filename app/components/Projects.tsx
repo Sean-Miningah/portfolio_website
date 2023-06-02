@@ -14,8 +14,8 @@ function Projects({}: Props) {
   const [carActive, setCarActive] = useState<number>(0);
 
   return (
-    <div
-      id="#projects"
+    <section
+      id="projects"
       className='
       bg-green-900
       w-full
@@ -52,7 +52,7 @@ function Projects({}: Props) {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
