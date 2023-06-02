@@ -4,6 +4,9 @@ import { useState } from 'react';
 
 import Drawer from './components/Drawer';
 import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
 
 export default function Home() {
   const [ isOpen, setIsOpen ] = useState<boolean>(false);
@@ -23,10 +26,10 @@ export default function Home() {
       <NavBar 
         setIsOpen={setIsOpen}
       />
-      {/* <Hero/>
+      <Hero/>
       <About />
       <Skills />
-      <Projects /> */}
+      {/* <Projects />  */}
     </main>
   )
 }
