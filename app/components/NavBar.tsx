@@ -15,7 +15,7 @@ const NavBar = ({ setIsOpen }: Props) => {
         px-6
         justify-between 
         items-center 
-        md:sticky 
+        sticky 
         top-0 
         z-10
         shadow-md
