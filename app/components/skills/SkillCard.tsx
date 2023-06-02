@@ -19,17 +19,27 @@ type Props = {
 function SkillCard({
   name,
   icon : Icon, 
-  description,
   index,
-  active,
-  handleClick
 }: Props) {
   return (
-    <motion.div
+    // <motion.div
+    //   initial="hidden"
+    //   whileInView="show"
+    //   viewport={{ once:false, amount:0.25 }}
+    //   variants={fadeIn('right', 'spring', index * 0.8, 0.75)}
+    //   className="flex flex-col justify-center items-center gap-3"
+    // >
+    //   <Icon size={45} className="text-green-900"/>
+    //   <p className="text-green-950 font-thin">{name}</p>
+    // </motion.div>
+    <motion.div 
       initial="hidden"
       whileInView="show"
-      viewport={{ once:false, amount:0.25 }}
-      variants={fadeIn('right', 'spring', index * 0.8, 0.75)}
+      viewport={{
+        once:false,
+        amount:0.25
+      }}
+      variants={fadeIn('left', 'spring', index, 0.75)}
       className="flex flex-col justify-center items-center gap-3"
     >
       <Icon size={45} className="text-green-900"/>

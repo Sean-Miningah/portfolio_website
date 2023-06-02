@@ -89,4 +89,52 @@ const education = [
   },
 ]
 
-export { languages, frameworks, education};
+const projects = [
+  {
+    name: "Airbnb",
+    image: "/images/projects/bnbClone.png",
+    description: "Full stack application mimics airbnb functionalities when booking an apartment.",
+    website_link: "https://app-clone-y3y4-ia517ydoy-sean-miningah.vercel.app/",
+    github_link: "https://github.com/Sean-Miningah/airbnb-clone",
+    concepts:[
+      "NextJS","Prisma","Axios","TypeScript", "MongoDB"
+    ]
+  },
+  {
+    name: "Finanseer",
+    image: "/images/projects/finanseer.png",
+    description: "Finance Dashboard for tracking expenses through visualised Graphs.",
+    website_link: "https://finance-dashboard-7faot454h-sean-miningah.vercel.app/",
+    github_link: "https://github.com/Sean-Miningah/FinanceDashboard-Client",
+    concepts: [
+      'ReactJS', "ExpressJS", "MongoDB", "Axios", "JavaScript"
+    ]
+  },
+  {
+    name: "Utilities Analysis",
+    image: '',
+    description: 'Project demonstrated ability to perform data analysis of utilities data set.',
+    website_link: "https://www.kaggle.com/code/seanminingah/utilities-analysis",
+    github_link: "",
+    concepts: [
+      'Python', 'Pandas', 'Plotly', 'Scikit-learn'
+    ]
+  }
+]
+
+const experience = [
+  {
+    position_title: "Data Analytics Executive",
+    company: "Strathmore Business Club",
+    year: "2022-2023",
+    location: "Nairobi, Kenya."
+  },
+  {
+    position_title : "Internship",
+    company: "Pesaflow Limited",
+    year: "2023",
+    location: "Nairobi, Kenya."
+  }
+]
+
+export { languages, frameworks, education, projects, experience};

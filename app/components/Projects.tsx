@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BiCodeBlock } from 'react-icons/bi'
+
+import { SafeProject } from '../interfaces/types';
+import { projects } from '../data/data';
+import ProjectCard from './projects/ProjectCard';
+
+
+
 
 type Props = {}
 
 function Projects({}: Props) {
+  const [carActive, setCarActive] = useState<number>(0);
+
   return (
     <div
       id="#projects"
@@ -15,10 +24,9 @@ function Projects({}: Props) {
       px-5
       flex
       flex-col
-      items-center
       '
     >
-      <div className="flex flex-row gap-2 items-center p-4">
+      <div className="flex flex-row gap-2 items-center p-4 justify-center">
         <BiCodeBlock size={45} className="text-orange-100"/>
         <p className="text-4xl">Projects</p>
       </div>
@@ -29,11 +37,20 @@ function Projects({}: Props) {
           lg:flex-row 
           gap-3 
           py-3 
-          lg:gap-5
+          lg:gap-5 
+          min-h-[70vh]
+          h-[500px]
           "
       >
-        <div>one</div>
-        <div>two</div>
+        {projects.map((proj:SafeProject, i) => (
+          <ProjectCard 
+            key={i}
+            values={proj}
+            index={i}
+            active={carActive}
+            handleClick={setCarActive}
+          />
+        ))}
       </div>
     </div>
   )

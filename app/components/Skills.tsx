@@ -21,8 +21,7 @@ function Skills({}: Props) {
       <div
         className="
           flex
-          flex-row
-          md:flex-col
+          flex-col
           justify-between
           md:justify-evenly
           items-cetner
@@ -34,7 +33,7 @@ function Skills({}: Props) {
           <p className="font-semibold text-2xl font-poppins text-green-900 py-2">Programming Languages</p>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center gap-9">
+        <div className="flex flex-row flex-wrap justify-center gap-9">
           {languages.map((value, i) => (
             <SkillCard 
               key={i}
@@ -49,15 +48,12 @@ function Skills({}: Props) {
       <div
         className="
           flex
-          flex-row
-          md:flex-col
+          flex-col
           justify-between
           md:justify-evenly
           items-cetner
           gap-4
           py-5
-          border-t-[1px]
-          border-green-600
           md:border-t-0
         "
       >
@@ -65,7 +61,7 @@ function Skills({}: Props) {
           <p className="font-semibold text-2xl font-poppins text-green-900 py-2">Frameworks</p>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center gap-9">
+        <div className="flex flex-row flex-wrap gap-4 justify-center">
           {frameworks.map((value, i) => (
             <SkillCard 
               key={i}
