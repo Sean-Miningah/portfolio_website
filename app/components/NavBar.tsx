@@ -28,7 +28,7 @@ const NavBar = ({ setIsOpen }: Props) => {
         <p
           className="text-l font-sigmar md:text-2xl lg:text-4xl" 
         >
-          Sean Miningah
+          Sean
         </p>
       </a>
       
@@ -38,12 +38,14 @@ const NavBar = ({ setIsOpen }: Props) => {
           className="
             font-poppins
             hover:scale-125
-            transition
+            transition-all
             ease-out
+            duration-75
+            cursor-pointer
           "
-          >
+        >
           <a href="#about">
-            Home
+            About
           </a>
         </div>
         <div 
@@ -54,8 +56,8 @@ const NavBar = ({ setIsOpen }: Props) => {
             ease-out
           "
         >
-          <a href="#about">
-            About
+          <a href="#skills">
+            Skills
           </a>
         </div>
         <div
@@ -68,6 +70,18 @@ const NavBar = ({ setIsOpen }: Props) => {
         >
           <a href="#projects">
             Projects
+          </a>
+        </div>
+        <div 
+          className="
+            font-poppins
+            hover:scale-125
+            transition
+            ease-out
+          "
+          >
+          <a href="#contact">
+            Contact
           </a>
         </div>
       </div>

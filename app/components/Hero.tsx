@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import { SiGithub, SiKaggle, SiLinkedin } from 'react-icons/si'; 
+import Link from 'next/link';
 
 type Props = {}
 
@@ -51,9 +52,36 @@ function Hero({}: Props) {
       <div>
         <div className="mr-5 md:border-l-2 py-2 border-green-600">
           <div className="flex flex-row md:flex-col gap-3 items-center pl-2">
-            <SiLinkedin size={25} className="text-green-800 hover:scale-125"/>
-            <SiKaggle size={60} className="text-green-800 hover:scale-125"/>
-            <SiGithub size={25} className="text-green-800 hover:scale-125"/>
+  
+            <a
+              href="https://github.com/Sean-Miningah"
+              target="_blank"
+            >
+              <SiGithub 
+                size={25} 
+                className="text-green-800 hover:scale-125 transition-all ease-out"
+              />
+            </a>
+
+            <a
+              href="https://www.kaggle.com/seanminingah"
+              target="_blank"
+            >
+            <SiKaggle 
+              size={60} 
+              className="text-green-800 hover:scale-125 transition-all ease-out"
+            />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/sean-miningah-876418163/"
+              target="_blank"
+            >
+              <SiLinkedin 
+                size={25} 
+                className="text-green-800 hover:scale-125 transition-all ease-in-out"
+              />
+            </a>
           </div>
         </div>
       </div>
