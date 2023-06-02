@@ -27,7 +27,7 @@ export const yearVariants: Variants = {
     transition: {
       type: 'spring',
       bounce: 0.4,
-      duaration: 0.8
+      duration: 0.8
     }
   }
 }
