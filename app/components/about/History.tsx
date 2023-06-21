@@ -10,7 +10,7 @@ import { cardVariants, yearVariants } from '../../utils/motion';
 
 type Props = {
   institution: string;
-  year: number;
+  year: number | string;
   location: string;
   certification: string;
   description: string;

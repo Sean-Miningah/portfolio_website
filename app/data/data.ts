@@ -64,21 +64,21 @@ const education = [
     description: "Completed Bachelor's Degree in Business Information Technology, I was awarded with a Second Class honors, Upper Division. Specialized in Business Intelligence. I particulary excelled in System Design and Development and Database Management Units.",
     link: "https://openbadgefactory.com/v1/assertion/f083e55c15acb37f05ef5317181cc01bdfd124be",
   },
-  {
-    institution: "France Université Numérique",
-    year: 2023,
-    location: "Nairobi - Kenya",
-    certification: "Machine Learning in Python",
-    description: "Gained knowledge on the steps taked to design and implement predictive modelling pipelines using Sciki-learn",
-    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/TXKFHR7FA567",
-  },
-  {
-    institution: 'Coursera - Duke University',
-    year: 2021,
-    certification: "Data Analysis with R",
-    location: "Nairobi - Kenya",
-    description: "Analysed and visualized data in R, created reproducible data analysis with R and gained conceptual understanding of statistical inference."
-  },
+  // {
+  //   institution: "France Université Numérique",
+  //   year: 2023,
+  //   location: "Nairobi - Kenya",
+  //   certification: "Machine Learning in Python",
+  //   description: "Gained knowledge on the steps taked to design and implement predictive modelling pipelines using Sciki-learn",
+  //   link: "https://www.coursera.org/account/accomplishments/specialization/certificate/TXKFHR7FA567",
+  // },
+  // {
+  //   institution: 'Coursera - Duke University',
+  //   year: 2021,
+  //   certification: "Data Analysis with R",
+  //   location: "Nairobi - Kenya",
+  //   description: "Analysed and visualized data in R, created reproducible data analysis with R and gained conceptual understanding of statistical inference."
+  // },
   {
     institution: "Strathmore University",
     year: 2021,
@@ -90,6 +90,18 @@ const education = [
 ]
 
 const projects = [
+  
+  {
+    name: "Shop Price Scraper",
+    image: '/images/projects/django-graphql-celery.png',
+    description: 'The application Scrapes Popular Products from an ecommerce website in Kenya and provides access to this data \
+      a graphal API',
+    website_link: "https://django-app-gdbj.onrender.com/graphql",
+    github_link: "https://github.com/Sean-Miningah/shopScraper",
+    concepts: [
+      'Python', 'Django', 'Grapql', 'Docker', 'Celery'
+    ]
+  },
   {
     name: "Airbnb",
     image: "/images/projects/bnbClone.png",
@@ -109,32 +121,35 @@ const projects = [
     concepts: [
       'ReactJS', "ExpressJS", "MongoDB", "Axios", "JavaScript"
     ]
-  },
-  {
-    name: "Utilities Analysis",
-    image: '',
-    description: 'Project demonstrated ability to perform data analysis of utilities data set.',
-    website_link: "https://www.kaggle.com/code/seanminingah/utilities-analysis",
-    github_link: "",
-    concepts: [
-      'Python', 'Pandas', 'Plotly', 'Scikit-learn'
-    ]
   }
 ]
 
 const experience = [
+  
+  {
+    position_title : "Backend Engineering Intern",
+    company: "Lyft",
+    year: "June 2023",
+    location: "Remote",
+    description: "Enganing in projects that require understanding in software architecture \
+    , refactoring, unit testing and test-driven-development."
+  },
   {
     position_title: "Data Analytics Executive",
     company: "Strathmore Business Club",
     year: "2022-2023",
-    location: "Nairobi, Kenya."
+    location: "Nairobi - Kenya.",
+    description: "Leveraged data analytics to identify areas of improvement and \
+      develop actionable plans to address those needs.",
   },
   {
     position_title : "Internship",
     company: "Pesaflow Limited",
     year: "2023",
-    location: "Nairobi, Kenya."
-  }
+    location: "Nairobi - Kenya.",
+    description: "Implemented a quality assurance process that included retrieve \
+    manipulating and presenting customer feedback data."
+  },
 ]
 
 export { languages, frameworks, education, projects, experience};

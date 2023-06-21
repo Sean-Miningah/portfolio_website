@@ -31,6 +31,11 @@ function Projects({}: Props) {
         <p className="text-4xl">Projects</p>
       </div>
       <div
+        className="flex flex-row justify-center items-center p-4"
+      >
+        <p>The project below demostrate the use of the skills mentioned above.</p>
+      </div>
+      <div
         className="
           flex 
           flex-col 
